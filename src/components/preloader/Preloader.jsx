@@ -5,6 +5,7 @@ import './preloader.css';
 
 const Preloader = () => {
   const [gif, setGif] = useState(1);
+  const [display, setDisplay] = useState('initial');
 
   const changeGif = () => {
     setTimeout(function () {
@@ -35,13 +36,15 @@ const Preloader = () => {
   }
 
   return (
-    <div className="container">
-      <div className="Wrapper" style={{ backgroundColor: bcg }}>
-        <div className="loaderWrapper">
-          <img src={require(`../../data/${gif}.gif`)} alt="" />
+    <div className="container" style={{ display: display }}>
+      <div className="whiteContainer">
+        <div className="Wrapper" style={{ backgroundColor: bcg }}>
+          <div className="loaderWrapper">
+            <img src={require(`../../data/${gif}.gif`)} alt="" />
+          </div>
+          {gif < 5 && changeGif()}
+          <ProgressBar gif={gif} setPreloaderDisplay={setDisplay} />
         </div>
-        {gif < 5 && changeGif()}
-        <ProgressBar gif={gif} />
       </div>
     </div>
   );

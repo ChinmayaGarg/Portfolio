@@ -2,7 +2,7 @@
   display: none;
 }
 
-.container {
+.whiteContainer {
   width: 100%;
   height: 100%;
   background-color: white;
@@ -16,7 +16,6 @@
 .Wrapper {
   width: 98.5%;
   height: 97.5%; /*99 for mobile*/
-  background-color: red;
   position: relative;
   display: flex;
   align-items: center;
