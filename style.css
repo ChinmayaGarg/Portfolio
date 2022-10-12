@@ -79,14 +79,15 @@
 }
 
 .rainbowBtn {
-  height: 55px;
-  width: 205px;
+  height: 60px;
+  width: 210px;
   margin-top: 80px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  animation: rotate 1.5s linear infinite;
 }
 
 .rainbowBtn > span {
@@ -99,4 +100,15 @@
 .rainbowBtn:hover > span {
   background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
   filter: blur(4px);
+}
+
+/* Rainbow Button Rotate Animation */
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
