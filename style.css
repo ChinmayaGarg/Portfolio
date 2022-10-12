@@ -69,6 +69,7 @@
 }
 
 .enterBtn {
+  display: none;
   margin-top: 40px;
   width: 200px;
   height: 50px;
