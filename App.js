@@ -38,5 +38,4 @@ disp(1);
 setTimeout(function () {
   document.getElementsByClassName('progressBar')[0].style.display = 'none';
   document.getElementsByClassName('enterBtn')[0].style.display = 'initial';
-  disp(i + 1);
 }, 9100);
