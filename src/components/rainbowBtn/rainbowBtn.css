@@ -1,0 +1,57 @@
+.rainbowBtn {
+  height: 60px;
+  width: 210px;
+  margin-top: 80px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: rotate 1.5s linear infinite;
+  /* background-color: blue; */
+}
+
+.enterBtn {
+  width: 200px;
+  height: 50px;
+  background-color: #111;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  z-index: 1000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.rainbowBtn > span {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.rainbowBtn:hover > span {
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  filter: blur(4px);
+}
+
+/* Rainbow Button Rotate Animation */
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* .portfolioWrapper {
+  display: none;
+  height: 100%;
+  width: 100%;
+} */
