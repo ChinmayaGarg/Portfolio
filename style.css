@@ -1,10 +1,8 @@
-* {
-  /* background-color: brown; */
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Gif Pre-Loader */
 
 .loaderWrapper {
   width: 100%;
@@ -29,10 +27,7 @@
   margin-bottom: 160px;
 }
 
-.loaderOne {
-  transition-delay: 1s;
-  transform: display none;
-}
+/* Progress Bar */
 
 @keyframes animate {
   100% {
@@ -67,6 +62,8 @@
   background-color: #f23762;
   border-radius: 500px;
 }
+
+/* Rainbow Button Click to Enter */
 
 .enterBtn {
   display: none;
