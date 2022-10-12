@@ -1,0 +1,34 @@
+/* Progress Bar */
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progressBar {
+  margin-top: 400px;
+  height: 10px;
+  width: 80%;
+  background-color: #f0f0f0;
+  border-radius: 500px;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progressBarFullShadow {
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 9s cubic-bezier(1, 0, 0.5, 1) forwards;
+  border-radius: 500px;
+}
+
+.progressBarFull {
+  height: 100%;
+  width: 100%;
+  border-radius: 500px;
+}

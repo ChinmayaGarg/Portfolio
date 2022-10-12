@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import ProgressBar from '../progressBar/ProgressBar';
 import './preloader.css';
 
 const Preloader = () => {
@@ -40,6 +41,7 @@ const Preloader = () => {
           <img src={require(`../../data/${gif}.gif`)} alt="" />
         </div>
         {gif < 5 && changeGif()}
+        <ProgressBar gif={gif} />
       </div>
     </div>
   );
