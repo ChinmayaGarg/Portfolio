@@ -20,8 +20,9 @@ const disp = i => {
         document.getElementsByClassName('progressBarFull')[0].style.backgroundColor = 'gray';
         break;
       case 5:
-        document.getElementsByClassName('loaderWrapper')[0].style.backgroundColor = '#f0f0f0';
-        document.getElementsByClassName('progressBarFull')[0].style.backgroundColor = '#000';
+        document.getElementsByClassName('progressBar')[0].style.backgroundColor = 'gray';
+        document.getElementsByClassName('loaderWrapper')[0].style.backgroundColor = '#000';
+        document.getElementsByClassName('progressBarFull')[0].style.backgroundColor = '#fff';
         break;
       default:
         document.getElementsByClassName('loaderWrapper')[0].style.backgroundColor = '#fff';
