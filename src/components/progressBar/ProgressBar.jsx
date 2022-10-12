@@ -1,6 +1,10 @@
 import React from 'react';
+import { useState } from 'react';
+import RainbowBtn from '../rainbowBtn/RainbowBtn';
 import './progressBar.css';
-const ProgressBar = ({ gif }) => {
+const ProgressBar = ({ gif, setPreloaderDisplay }) => {
+  const [display, setDisplay] = useState('initial');
+
   let bcg = '';
   switch (gif) {
     case 1:
@@ -22,11 +26,14 @@ const ProgressBar = ({ gif }) => {
       bcg = '#fff';
   }
   return (
-    <div class="progressBar" style={{ backgroundColor: gif === 5 && 'gray' }}>
-      <div class="progressBarFullShadow">
-        <div class="progressBarFull" style={{ backgroundColor: bcg }}></div>
+    <>
+      <div className="progressBar" style={{ backgroundColor: gif === 5 && 'gray', display: display }}>
+        <div className="progressBarFullShadow">
+          <div className="progressBarFull" style={{ backgroundColor: bcg }}></div>
+        </div>
       </div>
-    </div>
+      <RainbowBtn setProgressBarDisplay={setDisplay} setPreloaderDisplay={setPreloaderDisplay} gif={gif} />;
+    </>
   );
 };
 
