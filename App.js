@@ -40,3 +40,7 @@ setTimeout(function () {
   document.getElementsByClassName('progressBar')[0].style.display = 'none';
   document.getElementsByClassName('enterBtn')[0].style.display = 'initial';
 }, 9100);
+
+const handleClickToEnter = () => {
+  document.getElementsByClassName('loaderWrapper')[0].style.display = 'none';
+};
