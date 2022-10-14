@@ -1,10 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import './rainbowBtn.css';
-const RainbowBtn = ({ setProgressBarDisplay, setPreloaderDisplay, gif }) => {
+
+const RainbowBtn = ({ setProgressBarDisplay, gif, setDisplayProfile, setDisplayPreLoader }) => {
   const [display, setDisplay] = useState('none');
   const handleClickToEnter = () => {
-    setPreloaderDisplay('none');
+    setDisplayProfile('flex');
+    setDisplayPreLoader('none');
   };
   {
     gif === 5 &&
