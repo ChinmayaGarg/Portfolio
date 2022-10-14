@@ -2,7 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import RainbowBtn from '../rainbowBtn/RainbowBtn';
 import './progressBar.css';
-const ProgressBar = ({ gif, setPreloaderDisplay }) => {
+
+const ProgressBar = ({ gif, setDisplayProfile, setDisplayPreLoader }) => {
   const [display, setDisplay] = useState('initial');
 
   let bcg = '';
@@ -27,12 +28,24 @@ const ProgressBar = ({ gif, setPreloaderDisplay }) => {
   }
   return (
     <>
-      <div className="progressBar" style={{ backgroundColor: gif === 5 && 'gray', display: display }}>
+      <div
+        className="progressBar"
+        style={{
+          backgroundColor: gif === 5 && 'gray',
+          display: display
+        }}
+      >
         <div className="progressBarFullShadow">
           <div className="progressBarFull" style={{ backgroundColor: bcg }}></div>
         </div>
       </div>
-      <RainbowBtn setProgressBarDisplay={setDisplay} setPreloaderDisplay={setPreloaderDisplay} gif={gif} />;
+      <RainbowBtn
+        setProgressBarDisplay={setDisplay}
+        gif={gif}
+        setDisplayProfile={setDisplayProfile}
+        setDisplayPreLoader={setDisplayPreLoader}
+      />
+      ;
     </>
   );
 };
