@@ -1,9 +1,9 @@
-import Preloader from './components/preloader/Preloader';
+import Home from './pages/home/Home';
 
 const App = () => {
   return (
     <div>
-      <Preloader />
+      <Home />
     </div>
   );
 };
