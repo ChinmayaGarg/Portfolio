@@ -111,3 +111,19 @@
 .neon-button:focus::before {
   opacity: 1;
 }
+
+@media screen and (max-width: 1024px) and (min-width: 484px) {
+  .navContainer {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .logo {
+    display: none;
+  }
+
+  .navContainer {
+    justify-content: space-around;
+  }
+}
