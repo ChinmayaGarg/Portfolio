@@ -29,32 +29,34 @@ const Projects = () => {
             <div className="phone" style={{ transform: `translateX(calc(40vh - ${scrollPosition}px))` }}>
               <img src={require('../../data/phone.png')} alt="" />
               <div className="phoneScreen">
-                <img src="./img/phoneApp.png" alt="" className="phoneApp" />
+                <img src={require('../../data/bookingapp.png')} alt="" className="phoneApp" />
               </div>
             </div>
           </div>
           <div className="detailWrapper">
             <div className="projectDetail">
-              <h1 className="projectTitle">NotBooking.com</h1>
+              <h1 className="projectTitle">Hotel Booking</h1>
               <p className="projectDesc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae quia natus et iste earum
-                ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo veritatis
-                possimus! Accusamus repudiandae quia natus et iste earum ab fugiat eum ipsam, illum vitae nihil quasi
-                recusandae? Nesciunt laudantium recusandae illo veritatis possimus! laudantium recusandae illo veritatis
-                possimus! recusandae illo veritatis.
+                Developing a hotel booking app with JWT Authentiction and Authorization. <br />
+                Features include: CRUD operations on hotel DB by admin and hotel owner, CRUD operations on user DB,
+                Filtering hotels based on rooms available, no. of guests, age of children, storing encrypted passwords
+                in DB, REST APIs and many more.
+                <br />
+                <b>Tech Stack:</b> ReactJS, NodeJS, JS, MongoDB, ExpressJS, Redux, REST
               </p>
-              <button className="projectButton">Learn More</button>
+              <a href="https://notbooking.vercel.app/" target="_blank" rel="noreferrer">
+                <button className="projectButton">Learn More</button>
+              </a>
             </div>
           </div>
         </div>
 
         <div className="project">
           <div className="phoneWrapper">
-            {/* <div className="laptop" style={{ transform: `translateX(calc(160vh - ${scrollPosition}px))` }}> */}
-            <div className="laptop" style={{ transform: `translateX(calc(${scrollPosition}px - 130vh ))` }}>
+            <div className="laptop" style={{ transform: `translateX(calc(${scrollPosition}px - 160vh ))` }}>
               <img src={require('../../data/laptop.png')} alt="" />
               <div className="laptopScreen">
-                <img src={require('../../data/laptop.png')} alt="" className="laptopApp" />
+                <img src={require('../../data/ecom.png')} alt="" className="laptopApp" />
               </div>
             </div>
           </div>
@@ -62,23 +64,26 @@ const Projects = () => {
             <div className="projectDetail">
               <h1 className="projectTitle">Ecommerce</h1>
               <p className="projectDesc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae quia natus et iste earum
-                ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo veritatis
-                possimus! Accusamus repudiandae quia natus et iste earum ab fugiat eum ipsam, illum vitae nihil quasi
-                recusandae? Nesciunt laudantium recusandae illo veritatis possimus! laudantium recusandae illo veritatis
-                possimus! recusandae illo veritatis.
+                Developing an Ecommerce store that will allow authenticated and auhtorized user to add / delete / update
+                / retrieve information for products. Some features include cart operations, wishlist management,
+                deleting user, making a user admin, filtering products based on various properties, single product page
+                and zoom-in page, shop now option, and many more.
+                <br />
+                <b>Tech Stack:</b> ReactJS, NodeJS, JS, MongoDB, ExpressJS, Redux, REST
               </p>
-              <button className="projectButton">Learn More</button>
+              <a href="https://chinecommerce.vercel.app/" target="_blank" rel="noreferrer">
+                <button className="projectButton">Learn More</button>
+              </a>
             </div>
           </div>
         </div>
 
         <div className="project">
           <div className="phoneWrapper">
-            <div className="phone" style={{ transform: `translateX(calc(230vh - ${scrollPosition}px))` }}>
+            <div className="phone" style={{ transform: `translateX(calc(250vh - ${scrollPosition}px))` }}>
               <img src={require('../../data/phone.png')} alt="" />
               <div className="phoneScreen">
-                <img src={require('../../data/phone.png')} alt="" className="phoneApp" />
+                <img src={require('../../data/foodapp.jpg')} alt="" className="phoneApp" />
               </div>
             </div>
           </div>
@@ -86,13 +91,13 @@ const Projects = () => {
             <div className="projectDetail">
               <h1 className="projectTitle">Delivery App</h1>
               <p className="projectDesc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae quia natus et iste earum
-                ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo veritatis
-                possimus! Accusamus repudiandae quia natus et iste earum ab fugiat eum ipsam, illum vitae nihil quasi
-                recusandae? Nesciunt laudantium recusandae illo veritatis possimus! laudantium recusandae illo veritatis
-                possimus! recusandae illo veritatis.
+                Developed a Food App like Uber Eats which allows user to search, view and favourite their food items
+                with map integration and Firebase google Authentication.
+                <br /> <b>Tech Stack:</b> React-native, Styled-components, Javascript, FireBase.
               </p>
-              <button className="projectButton">Learn More</button>
+              <a href="https://github.com/ChinmayaGarg/MealsToGo" target="_blank" rel="noreferrer">
+                <button className="projectButton">Learn More</button>
+              </a>
             </div>
           </div>
         </div>

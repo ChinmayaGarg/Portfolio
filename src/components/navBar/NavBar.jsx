@@ -8,9 +8,25 @@ const NavBar = () => {
       <div className="navContainer">
         <span className="logo">Chinmaya Garg</span>
         <div className="navIcons">
-          <FontAwesomeIcon icon={faLinkedinIn} className="linkedin" />
-          <FontAwesomeIcon icon={faGithub} className="github" />
-          <FontAwesomeIcon icon={faFacebookF} className="facebook" />
+          <a
+            style={{ color: 'gray' }}
+            href="https://www.linkedin.com/in/chinmayagarg/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} className="linkedin" />
+          </a>
+          <a style={{ color: 'gray' }} href="https://github.com/ChinmayaGarg" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faGithub} className="github" />
+          </a>
+          <a
+            style={{ color: 'gray' }}
+            href="https://www.facebook.com/chinmaya.garg.1/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faFacebookF} className="facebook" />
+          </a>
         </div>
         <div className="navItems">
           <button className="neon-button">RESUME</button>
