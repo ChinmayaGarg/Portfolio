@@ -38,15 +38,17 @@ const FindMeGithub = () => {
           <span>Nov</span>
           <span>Dec</span>
         </div>
-        <div className="boxContainer">{boxArr}</div>
+        <a href="https://github.com/ChinmayaGarg" target="_blank" rel="noreferrer">
+          <div className="boxContainer">{boxArr}</div>
+        </a>
         <h1 className="githubTitle">ON GITHUB</h1>
       </div>
-      {/* <div className="githubSm">
-        <a href="">
-          <img src="./img/github.png" alt="" />
+      <div className="githubSm">
+        <a href="https://github.com/ChinmayaGarg" target="_blank" rel="noreferrer">
+          <img src="../../data" alt="" />
         </a>
         <h2>Find Me on Github</h2>
-      </div> */}
+      </div>
     </div>
   );
 };
