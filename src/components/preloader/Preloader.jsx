@@ -3,9 +3,8 @@ import { useState } from 'react';
 import ProgressBar from '../progressBar/ProgressBar';
 import './preloader.css';
 
-const Preloader = () => {
+const Preloader = ({ setDisplayProfile, setDisplayPreLoader }) => {
   const [gif, setGif] = useState(1);
-  const [display, setDisplay] = useState('initial');
 
   const changeGif = () => {
     setTimeout(function () {
@@ -36,14 +35,19 @@ const Preloader = () => {
   }
 
   return (
-    <div className="container" style={{ display: display }}>
+    <div
+      className="container"
+      style={{
+        display: 'initial'
+      }}
+    >
       <div className="whiteContainer">
         <div className="Wrapper" style={{ backgroundColor: bcg }}>
           <div className="loaderWrapper">
             <img src={require(`../../data/${gif}.gif`)} alt="" />
           </div>
           {gif < 5 && changeGif()}
-          <ProgressBar gif={gif} setPreloaderDisplay={setDisplay} />
+          <ProgressBar gif={gif} setDisplayProfile={setDisplayProfile} setDisplayPreLoader={setDisplayPreLoader} />
         </div>
       </div>
     </div>
