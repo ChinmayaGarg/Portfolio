@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './projects.css';
+import useWindowDimensions from '../../utils/useWindowDimensions';
 
 const Projects = () => {
+  const { height, width } = useWindowDimensions();
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -53,10 +55,13 @@ const Projects = () => {
 
         <div className="project">
           <div className="phoneWrapper">
-            <div className="laptop" style={{ transform: `translateX(calc(${scrollPosition}px - 160vh ))` }}>
-              <img src={require('../../data/laptop.png')} alt="" />
-              <div className="laptopScreen">
-                <img src={require('../../data/ecom.png')} alt="" className="laptopApp" />
+            <div
+              className={width > 650 ? 'laptop' : 'phone'}
+              style={{ transform: `translateX(calc(${scrollPosition}px - 160vh ))` }}
+            >
+              <img src={width > 650 ? require('../../data/laptop.png') : require('../../data/phone.png')} alt="" />
+              <div className={width > 650 ? 'laptopScreen' : 'phoneScreen'}>
+                <img src={require('../../data/ecom.png')} alt="" className={width > 650 ? 'laptopApp' : 'phoneApp'} />
               </div>
             </div>
           </div>
