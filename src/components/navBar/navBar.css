@@ -1,0 +1,113 @@
+.navbar {
+  height: 70px;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.navButton {
+  border: 1px solid;
+  border-color: #0071c2;
+  border-radius: 2px;
+  padding: 7px 0px;
+  width: 80px;
+  color: #0071c2;
+  font-weight: 600;
+  background-color: #fff;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* ---------Nav Icons-------- */
+
+.navIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+}
+
+.github:hover {
+  color: #fff;
+}
+
+.linkedin:hover {
+  color: #0a66c2;
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+/* ---------Neon-------- */
+
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.neon-button {
+  font-size: 20px;
+  height: 40px;
+  width: 112px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 2px solid;
+  border-radius: 5px;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  position: relative;
+  background-color: transparent;
+}
+
+.neon-button::before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+  background-color: var(--clr-neon);
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  font-weight: bold;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
