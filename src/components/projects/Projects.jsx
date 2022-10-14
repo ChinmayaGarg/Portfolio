@@ -43,7 +43,9 @@ const Projects = () => {
                 recusandae? Nesciunt laudantium recusandae illo veritatis possimus! laudantium recusandae illo veritatis
                 possimus! recusandae illo veritatis.
               </p>
-              <button className="projectButton">Learn More</button>
+              <a href="https://notbooking.vercel.app/" target="_blank" rel="noreferrer">
+                <button className="projectButton">Learn More</button>
+              </a>
             </div>
           </div>
         </div>
@@ -68,7 +70,9 @@ const Projects = () => {
                 recusandae? Nesciunt laudantium recusandae illo veritatis possimus! laudantium recusandae illo veritatis
                 possimus! recusandae illo veritatis.
               </p>
-              <button className="projectButton">Learn More</button>
+              <a href="https://chinecommerce.vercel.app/" target="_blank" rel="noreferrer">
+                <button className="projectButton">Learn More</button>
+              </a>
             </div>
           </div>
         </div>
@@ -92,7 +96,9 @@ const Projects = () => {
                 recusandae? Nesciunt laudantium recusandae illo veritatis possimus! laudantium recusandae illo veritatis
                 possimus! recusandae illo veritatis.
               </p>
-              <button className="projectButton">Learn More</button>
+              <a href="https://github.com/ChinmayaGarg/MealsToGo" target="_blank" rel="noreferrer">
+                <button className="projectButton">Learn More</button>
+              </a>
             </div>
           </div>
         </div>
