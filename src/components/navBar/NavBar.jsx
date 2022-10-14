@@ -29,7 +29,9 @@ const NavBar = () => {
           </a>
         </div>
         <div className="navItems">
-          <button className="neon-button">RESUME</button>
+          <a href="../../data/Resume_Chinmaya.pdf" download>
+            <button className="neon-button">RESUME</button>
+          </a>
         </div>
       </div>
     </div>
