@@ -148,15 +148,17 @@
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) /* and (min-width: 484px) */ {
   .projects {
     padding: 0 30px;
     text-align: center;
+    gap: 30px;
   }
 
   .project {
     flex-direction: column;
     height: max-content;
+    gap: 50px;
   }
   .project:nth-child(2n) {
     flex-direction: column;
@@ -165,5 +167,13 @@
   .phone,
   .laptop {
     transform: none !important;
+  }
+
+  .projectsTitle {
+    margin-bottom: 12%;
+  }
+
+  .detailWrapper {
+    padding: 0;
   }
 }
