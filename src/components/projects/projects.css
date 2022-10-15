@@ -10,6 +10,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .projectsTitle {
@@ -21,7 +22,6 @@
 .project {
   display: flex;
   align-items: center;
-  gap: 100px;
   height: 100vh;
   overflow: hidden;
 }
