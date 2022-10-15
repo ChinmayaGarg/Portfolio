@@ -28,7 +28,7 @@ const Projects = () => {
 
         <div className="project">
           <div className="phoneWrapper">
-            <div className="phone" style={{ transform: `translateX(calc(40vh - ${scrollPosition}px))` }}>
+            <div className="phone" style={{ transform: `translateX(calc(60vh - ${scrollPosition}px))` }}>
               <img src={require('../../data/phone.png')} alt="" />
               <div className="phoneScreen">
                 <img src={require('../../data/bookingapp.png')} alt="" className="phoneApp" />
@@ -85,7 +85,7 @@ const Projects = () => {
 
         <div className="project">
           <div className="phoneWrapper">
-            <div className="phone" style={{ transform: `translateX(calc(250vh - ${scrollPosition}px))` }}>
+            <div className="phone" style={{ transform: `translateX(calc(255vh - ${scrollPosition}px))` }}>
               <img src={require('../../data/phone.png')} alt="" />
               <div className="phoneScreen">
                 <img src={require('../../data/foodapp.jpg')} alt="" className="phoneApp" />
