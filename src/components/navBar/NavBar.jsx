@@ -29,7 +29,12 @@ const NavBar = () => {
           </a>
         </div>
         <div className="navItems">
-          <a href="../../data/Resume_Chinmaya.pdf" download>
+          <a
+            href={require('../../data/Resume_Chinmaya.pdf')}
+            download="Chinmaya_Resume"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="neon-button">RESUME</button>
           </a>
         </div>
